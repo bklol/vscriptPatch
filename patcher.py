@@ -11,7 +11,7 @@ class Patcher:
         ):
             print("failed to patch vscript.dll")
         else:
-            print("your vscript.dll patch successful")
+            print("your vscript.dll patched successful")
 
     def replace_bytes(filename, search_pattern, replace_bytes):
         try:

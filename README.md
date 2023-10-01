@@ -1,5 +1,5 @@
 # vscriptPatch
-Patch vscript.dll so we can use script in cs2  
+Patch vscript.dll/so so we can use script in cs2  
 How to use:  
 1.Install Python  
 2.Put your vscript.dll runpatcher.bat patcher.py in the same folder  (linux put libvscript.so runpatcher_linux.bat patcher_linux.py)  

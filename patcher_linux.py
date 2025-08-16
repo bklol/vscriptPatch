@@ -1,13 +1,13 @@
 import os
 import mmap
 
-# search: 55 48 89 E5 41 55 41 54 53 48 83 EC 08 83 FE 01
+# search: 83 FE 01 0F 84 ?? ?? ?? ?? 83
 # 
 class Patcher:
 
     def patch_vscript():
         if not Patcher.replace_bytes(
-            "libvscript.so", b"\x83\xFE\x01\x0F\x84\x6F", b"\x83\xFE\x02\x0F\x84\x6F"
+            "libvscript.so", b"\x83\xFE\x01\x0F\x84\x67", b"\x83\xFE\x02\x0F\x84\x67"
         ):
             print("failed to patch libvscript.so")
         else:

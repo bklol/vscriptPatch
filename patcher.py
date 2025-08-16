@@ -1,13 +1,13 @@
 import os
 import mmap
 
-# search: BE 01 ? ? ? 2B D6 74 61 3B D6
+# search: BE 01 ?? ?? ?? 2B D6 74 ?? 3B D6
 # 
 class Patcher:
 
     def patch_vscript():
         if not Patcher.replace_bytes(
-            "vscript.dll", b"\xBE\x01\x00\x00\x00\x2B\xD6\x74\x5B\x3B\xD6", b"\xBE\x02\x00\x00\x00\x2B\xD6\x74\x5B\x3B\xD6"
+            "vscript.dll", b"\xBE\x01\x00\x00\x00\x2B\xD6\x74\x48\x3B\xD6", b"\xBE\x02\x00\x00\x00\x2B\xD6\x74\x48\x3B\xD6"
         ):
             print("failed to patch vscript.dll")
         else:

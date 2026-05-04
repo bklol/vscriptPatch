@@ -7,7 +7,7 @@ class Patcher:
 
     def patch_vscript():
         if not Patcher.replace_bytes(
-            "libvscript.so", b"\x83\xFE\x01\x0F\x84\x67", b"\x83\xFE\x02\x0F\x84\x67"
+            "libvscript.so", b"\x83\xFE\x01\x0F\x84\x6C", b"\x83\xFE\x02\x0F\x84\x6C"
         ):
             print("failed to patch libvscript.so")
         else:
